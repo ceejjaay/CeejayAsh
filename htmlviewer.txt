@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEEJAY ASH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.5s;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #ff0000;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.5s;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff0000;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            transition: box-shadow 0.5s;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        .social-icons a {
+            color: #ff0000;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .merch-link {
+            text-align: center;
+            margin-top: 20px;
+            transition: transform 0.5s;
+        }
+
+        .merch-link a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+
+        .merch-link a:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #ffffff;
+            border-radius: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            transition: background-color 0.5s;
+        }
+
+        .pronoun-reminder {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 10px;
+            transition: background-color 0.5s;
+        }
+
+        .pronoun-reminder p {
+            margin: 0;
+        }
+
+        .pronoun-reminder:hover {
+            background-color: #ff0000;
+        }
+
+        .quiz-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 10px;
+            transition: background-color 0.5s;
+        }
+
+        .quiz-question {
+            font-size: 18px;
+            color: #ff0000;
+            margin-bottom: 10px;
+        }
+
+        .quiz-options {
+            display: flex;
+            justify-content: center;
+        }
+
+        .quiz-option {
+            margin: 0 10px;
+            padding: 8px 16px;
+            background-color: #ff0000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .quiz-option:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CEEJAY ASH</h1>
+        <p>Welcome to my official website!!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">YouTube</a>
+        <a href="#contact">Contact</a>
+        <a href="#merch">Merch</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to CEEJAY ASH's World</h2>
+        <p>Hello! I'm CEEJAY, an upcoming artist from Manhattan, New York. Inspired by Rina Sawayama, Tedy, Amy Winehouse, SZA, XXXTENTACION, Shea Couleé, Björk, Kali Uchis, and Ocean Kelly.</p>
+        <p>My musical journey started during a dark point in quarantine, leading me to discover a deep passion for music. I aim to inspire and bring joy to others through my universal and unique music.</p>
+        <p>In 2021, I released my first self-produced song, "AYE," marking the beginning of a proud musical journey. In 2022, "We Aiit" became a high-performing release, accompanied by a visually stunning music video directed by ANARA.</p>
+        <!-- Embedded Spotify Track -->
+        <iframe src="https://open.spotify.com/embed/track/7dNGsCkZmRnZ8jXj1TsRSj" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/shame/1701002550?i=1701002552&theme=light"></iframe>
+    </section>
+
+    <section id="quiz" class="quiz-container">
+        <h2>Music Genre Quiz</h2>
+        <p class="quiz-question">What's your favorite music genre?</p>
+        <div class="quiz-options">
+            <button class="quiz-option" onclick="showResult('Pop')">Pop</button>
+            <button class="quiz-option" onclick="showResult('Rock')">Rock</button>
+            <button class="quiz-option" onclick="showResult('Hip Hop')">Hip Hop</button>
+        </div>
+        <p id="quiz-result"></p>
+    </section>
+
+    <section id="pronouns" class="pronoun-reminder">
+        <p>Pronouns: They/Them</p>
+        <p> Pansexual: Attracted to people regardless of gender or gender identity.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>YouTube Pages</h2>
+        <p>Explore my musical journey on YouTube:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A58gngkgk7g" allowfullscreen></iframe>
+        <p>Watch the performance of "Double U" mashed with "Escapism":</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_pAOu9EUqXA" allowfullscreen></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact and Socials</h2>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@ceejayisanartist" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/ceejay_ash.mp3/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/4PVwsjnUbZTt5MCUuNFelU" target="_blank"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.youtube.com/channel/UCJ-GtQOWFdUERc8L_RYafwQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://music.apple.com/us/artist/ceejay-ash/1571786722" target="_blank"><i class="fab fa-apple"></i></a>
+        </div>
+    </section>
+
+    <section id="merch" class="merch-link">
+        <h2>Merchandise</h2>
+        <p>Explore exclusive merchandise  <a href="https://www.bonfire.com/store/ceejay/" target="_blank">MERCH</a>.</p>
+    </section>
+
+    <footer>
+        &copy; 2023 CEEJAY ASH
+    </footer>
+
+    <script>
+        // Add dynamic background color change
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section, index) => {
+            section.addEventListener("mouseenter", () => {
+                const color = getRandomColor();
+                document.body.style.backgroundColor = color;
+                document.querySelector("nav").style.backgroundColor = color;
+                document.querySelector("footer").style.backgroundColor = color;
+                sections[index].querySelector("iframe").style.boxShadow = `0 0 10px ${color}`;
+                document.querySelector(".merch-link").style.transform = "scale(1.1)";
+            });
+
+            section.addEventListener("mouseleave", () => {
+                document.body.style.backgroundColor = "#1a1a1a";
+                document.querySelector("nav").style.backgroundColor = "#333";
+                document.querySelector("footer").style.backgroundColor = "#333";
+                sections[index].querySelector("iframe").style.boxShadow = "0 0 10px rgba(255, 0, 0, 0.5)";
+                document.querySelector(".merch-link").style.transform = "scale(1)";
+            });
+        });
+
+        // Function to generate a random color
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Interactive Quiz Script
+        function showResult(result) {
+            const resultElement = document.getElementById('quiz-result');
+            resultElement.textContent = `Great choice! ${result} is awesome! 🎶`;
+        }
+    </script>
+
+</body>
+
+</html>
